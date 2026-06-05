@@ -1,0 +1,51 @@
+
+{
+  "manifest_version": 3,
+  "default_locale": "en",
+  "name": "__MSG_appName__",
+  "version": "1.5.4",
+  "description": "__MSG_appDesc__",
+  "permissions": [
+    "storage",
+    "notifications",
+    "alarms",
+    "offscreen",
+    "system.display",
+    "sidePanel",
+    "contextMenus",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*.icloud.com/*",
+    "https://*.icloud.com.cn/*"
+  ],
+  "action": {
+    "default_title": "__MSG_appName__",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "side_panel": {
+    "default_path": "ui/index.html"
+  },
+  "background": {
+    "service_worker": "background/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

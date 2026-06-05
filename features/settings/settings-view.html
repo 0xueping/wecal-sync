@@ -1,0 +1,85 @@
+<div class="fade-in" style="padding:12px 16px 72px;">
+    <div class="glass-card">
+        <h2 class="page-title">__MSG_settings__</h2>
+        
+        <!-- AI Service / AI 服务 -->
+        <div style="margin-bottom:20px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+                <span style="font-size:13px;font-weight:600;color:var(--text-primary);">__MSG_aiService__</span>
+                <div class="help-trigger">
+                    __MSG_help__
+                    <div class="help-tooltip">
+                        <div class="tooltip-title">__MSG_freeApiKey__</div>
+                        <ol class="tooltip-list">
+                            <li>1. __MSG_visit__ <a href="https://open.bigmodel.cn/" target="_blank">open.bigmodel.cn</a></li>
+                            <li>2. __MSG_registerZhipu__</li>
+                            <li>3. __MSG_gotoApiKeys__</li>
+                        </ol>
+                        <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.3);">
+                            <span style="font-size:10px;color:var(--text-muted);">__MSG_glmFreeHint__</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px;">
+                <div>
+                    <label style="display:block;font-size:11px;color:var(--text-muted);margin-bottom:4px;">__MSG_apiEndpoint__</label>
+                    <input id="aiBaseUrl" type="text" class="input-field" placeholder="https://open.bigmodel.cn/api/paas/v4">
+                </div>
+                <div>
+                    <label style="display:block;font-size:11px;color:var(--text-muted);margin-bottom:4px;">__MSG_model__</label>
+                    <input id="aiModel" type="text" class="input-field" placeholder="glm-4-flash">
+                </div>
+                <div>
+                    <label style="display:block;font-size:11px;color:var(--text-muted);margin-bottom:4px;">__MSG_apiKey__</label>
+                    <input id="aiKey" type="password" class="input-field" placeholder="__MSG_pasteApiKey__">
+                </div>
+            </div>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:8px;line-height:1.5;">
+                __MSG_openaiCompatHint__
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Reminder / 提醒 -->
+        <div style="margin-bottom:4px;">
+            <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px;">__MSG_remindBefore__</div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                <label style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-secondary);background:rgba(255,255,255,0.3);padding:8px 14px;border-radius:var(--radius-pill);cursor:pointer;transition:all 0.2s;">
+                    <input type="checkbox" id="alert-30" checked> __MSG_30min__
+                </label>
+                <label style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-secondary);background:rgba(255,255,255,0.3);padding:8px 14px;border-radius:var(--radius-pill);cursor:pointer;transition:all 0.2s;">
+                    <input type="checkbox" id="alert-15" checked> __MSG_15min__
+                </label>
+                <label style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-secondary);background:rgba(255,255,255,0.3);padding:8px 14px;border-radius:var(--radius-pill);cursor:pointer;transition:all 0.2s;">
+                    <input type="checkbox" id="alert-5" checked> __MSG_5min__
+                </label>
+                <label style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-secondary);background:rgba(255,255,255,0.3);padding:8px 14px;border-radius:var(--radius-pill);cursor:pointer;transition:all 0.2s;">
+                    <input type="checkbox" id="alert-0" checked> __MSG_atStart__
+                </label>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- About / 关于 -->
+        <div>
+            <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:8px;">__MSG_about__</div>
+            <div style="font-size:12px;color:var(--text-muted);line-height:1.6;">
+                <div>WeCal Sync v1.5.3</div>
+                <div>__MSG_appDesc__</div>
+                <div>Chrome Extension MV3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Action buttons / 操作按钮 -->
+    <div style="display:flex;gap:10px;margin-top:20px;">
+        <button id="cancelSettingsBtn" class="btn-secondary" style="flex:1;">__MSG_cancel__</button>
+        <button id="saveSettingsBtn" class="btn-primary" style="flex:2;">__MSG_saveSettings__</button>
+    </div>
+    
+    <!-- Status / 状态 -->
+    <div id="settingsStatus" class="text-center" style="font-size:12px;color:var(--text-muted);margin-top:10px;"></div>
+</div>

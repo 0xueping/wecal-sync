@@ -1,0 +1,60 @@
+<div class="fade-in" style="padding:12px 16px 72px;">
+    <!-- 日期 + 新建按钮 -->
+    <div class="glass-card" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;padding:14px 20px;">
+        <h2 id="current-date-header" style="font-size:17px;font-weight:600;color:var(--text-primary);letter-spacing:-0.02em;margin:0;">--月--日 ---</h2>
+        <button id="toCreateEventBtn" class="btn-primary" style="width:auto;padding:8px 18px;font-size:12px;border-radius:var(--radius-pill);display:flex;align-items:center;gap:4px;">__MSG_createNew__</button>
+    </div>
+
+    <!-- 今天日程 -->
+    <div class="glass-card" style="margin-bottom:12px;padding:14px 16px;">
+        <div class="collapsible-header" id="today-collapsible" style="padding:6px 0;">
+            <span style="font-size:11px;font-weight:600;color:var(--text-secondary);letter-spacing:0.3px;">__MSG_todaySchedule__</span>
+            <svg style="width:14px;height:14px;color:var(--text-muted);transition:transform 0.25s;" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+        </div>
+        <div id="today-list" style="display:flex;flex-direction:column;gap:6px;margin-top:4px;"></div>
+    </div>
+
+    <!-- 明天日程 -->
+    <div class="glass-card" style="margin-bottom:12px;padding:14px 16px;">
+        <div class="collapsible-header" id="tomorrow-collapsible" style="padding:6px 0;">
+            <span style="font-size:11px;font-weight:600;color:var(--text-secondary);letter-spacing:0.3px;">__MSG_tomorrowSchedule__</span>
+            <svg style="width:14px;height:14px;color:var(--text-muted);transition:transform 0.25s;" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+        </div>
+        <div id="tomorrow-list" style="display:flex;flex-direction:column;gap:6px;margin-top:4px;"></div>
+    </div>
+
+    <!-- 后天日程 -->
+    <div class="glass-card" style="margin-bottom:12px;padding:14px 16px;">
+        <div class="collapsible-header" id="dayAfterTomorrow-collapsible" style="padding:6px 0;">
+            <span style="font-size:11px;font-weight:600;color:var(--text-secondary);letter-spacing:0.3px;">__MSG_dayAfterTomorrowSchedule__</span>
+            <svg style="width:14px;height:14px;color:var(--text-muted);transition:transform 0.25s;" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+        </div>
+        <div id="dayAfterTomorrow-list" style="display:flex;flex-direction:column;gap:6px;margin-top:4px;"></div>
+    </div>
+
+    <!-- 月视图入口 -->
+    <div style="text-align:center;margin-top:12px;">
+        <span id="openMonthView" style="font-size:11px;color:var(--text-muted);cursor:pointer;padding:6px 16px;border-radius:var(--radius-pill);background:rgba(255,255,255,0.3);transition:all 0.2s;display:inline-block;">📅 __MSG_monthView__</span>
+    </div>
+
+    <!-- 同步状态 -->
+    <div style="text-align:center;margin-top:12px;">
+        <div id="viewSyncStatus" class="sync-status-bar">__MSG_syncingStatus__</div>
+    </div>
+
+    <!-- 底部导航 (极简: 仅图标 + 一字标签) -->
+    <div class="bottom-nav">
+        <div id="toConfigBtn" class="nav-link">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" /></svg>
+            <span>__MSG_iCloud__</span>
+        </div>
+        <div id="syncNowBtn" class="nav-link">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+            <span>__MSG_sync__</span>
+        </div>
+        <div id="toSettingsBtn" class="nav-link">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+            <span>__MSG_settings__</span>
+        </div>
+    </div>
+</div>

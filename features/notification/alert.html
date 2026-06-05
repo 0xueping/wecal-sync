@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>__MSG_alertWindowTitle__</title>
+    <style>
+        /* ========== Design Tokens (aligned with global.css) / 设计 Token（与 global.css 统一）========== */
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.55);
+            --glass-border: rgba(99, 102, 241, 0.18);
+            --glass-shadow: 0 8px 32px rgba(99, 102, 241, 0.14);
+            --glass-blur: blur(24px) saturate(1.5);
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --primary-soft: rgba(99, 102, 241, 0.12);
+            --primary-glow: rgba(99, 102, 241, 0.2);
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+            --text-primary: #1e1b4b;
+            --text-secondary: #6b7280;
+            --text-muted: #a1a1aa;
+            --bg-gradient: linear-gradient(150deg, #f5f6f8 0%, #f8f9fa 50%, #f1f2f4 100%);
+            --radius-sm: 10px;
+            --radius-md: 16px;
+            --radius-lg: 20px;
+            --radius-pill: 999px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", "Helvetica Neue", sans-serif;
+            color: var(--text-primary);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Top gradient bar / 顶部渐变条 */
+        .urgent-bar {
+            height: 4px;
+            width: 100%;
+            background: linear-gradient(90deg, var(--primary), #8b5cf6);
+            flex-shrink: 0;
+        }
+
+        /* WeCal title / WeCal 标题 */
+        .app-brand {
+            text-align: center;
+            padding: 12px 0 4px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--primary);
+            letter-spacing: 2px;
+            opacity: 0.7;
+            flex-shrink: 0;
+        }
+
+        .main-container {
+            flex: 1;
+            padding: 8px 20px 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            overflow-y: auto;
+        }
+
+        /* Bell icon / 铃铛图标 */
+        .icon-wrapper {
+            width: 80px;
+            height: 80px;
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            box-shadow: 0 8px 28px rgba(99, 102, 241, 0.12);
+            border: 1px solid var(--glass-border);
+            animation: ring 1.2s ease-in-out infinite;
+            flex-shrink: 0;
+        }
+        @keyframes ring {
+            0%, 100% { transform: rotate(0); }
+            10%, 30%, 50%, 70%, 90% { transform: rotate(6deg); }
+            20%, 40%, 60%, 80% { transform: rotate(-6deg); }
+        }
+
+        /* Glass card / 玻璃卡片 */
+        .glass-card {
+            width: 100%;
+            max-width: 360px;
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border-radius: var(--radius-lg);
+            padding: 20px 24px;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+        }
+
+        .event-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 16px;
+            line-height: 1.4;
+            word-break: break-word;
+        }
+
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(99, 102, 241, 0.1);
+            font-size: 14px;
+        }
+        .detail-row:last-child { border-bottom: none; }
+
+        .detail-label {
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+        .detail-value {
+            font-weight: 500;
+            color: var(--text-primary);
+            text-align: right;
+            max-width: 60%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 13px;
+        }
+
+        /* Bottom action area / 底部操作区 */
+        .footer-action {
+            width: 100%;
+            max-width: 360px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Countdown badge / 倒计时徽章 */
+        .time-badge {
+            background: var(--primary-soft);
+            color: var(--primary);
+            font-weight: 700;
+            padding: 8px 28px;
+            border-radius: var(--radius-pill);
+            font-size: 18px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(99, 102, 241, 0.1);
+        }
+
+        .auto-close-hint {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .close-btn {
+            width: 100%;
+            max-width: 360px;
+            padding: 12px 36px;
+            background: var(--primary);
+            border: none;
+            border-radius: var(--radius-sm);
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(99, 102, 241, 0.25);
+        }
+        .close-btn:hover {
+            background: var(--primary-hover);
+            box-shadow: 0 4px 16px rgba(99, 102, 241, 0.35);
+            transform: translateY(-1px);
+        }
+        .close-btn:active {
+            transform: scale(0.98) translateY(0);
+        }
+
+        /* Urgent theme when event is starting (0 minutes) / 没有铃铛的场合（0分钟时）红色主题 */
+        .time-badge.urgent {
+            background: rgba(239, 68, 68, 0.12);
+            color: var(--error);
+        }
+    </style>
+</head>
+<body>
+    <div class="urgent-bar"></div>
+    <div class="app-brand">WECAL SYNC</div>
+    <div class="main-container">
+        <div class="icon-wrapper">🔔</div>
+
+        <div class="glass-card">
+            <div id="title" class="event-title">__MSG_loading__</div>
+            <div class="detail-row">
+                <span class="detail-label">__MSG_startTime__</span>
+                <span id="start" class="detail-value">__MSG_timePlaceholder__</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">__MSG_durationLabel__</span>
+                <span id="duration" class="detail-value">__MSG_durationPlaceholder__</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">__MSG_locationLabel__</span>
+                <span id="location" class="detail-value">__MSG_notMarked__</span>
+            </div>
+        </div>
+
+        <div class="footer-action">
+            <div id="countdown" class="time-badge">__MSG_countdownBeforeStart__</div>
+            <div id="close-timer" class="auto-close-hint">__MSG_autoCloseHint__</div>
+            <button id="manual-close" class="close-btn">__MSG_understand__</button>
+        </div>
+    </div>
+    <script src="alert.js"></script>
+</body>
+</html>

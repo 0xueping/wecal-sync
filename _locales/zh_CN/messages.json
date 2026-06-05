@@ -1,0 +1,491 @@
+{
+  "appName": {
+    "message": "WeCal Sync - 苹果日历助手"
+  },
+  "appDesc": {
+    "message": "同步苹果 iCloud 日历，准点弹窗并鸣响强力告警音"
+  },
+  "appTitle": {
+    "message": "WeCal Sync - 苹果日历助手"
+  },
+  "loading": {
+    "message": "正在初始化..."
+  },
+  "today": {
+    "message": "今天"
+  },
+  "tomorrow": {
+    "message": "明天"
+  },
+  "dayAfterTomorrow": {
+    "message": "后天"
+  },
+  "noEvents": {
+    "message": "暂无日程安排"
+  },
+  "lastSync": {
+    "message": "最后同步"
+  },
+  "syncNow": {
+    "message": "立即同步"
+  },
+  "syncing": {
+    "message": "正在同步最新日程..."
+  },
+  "syncFailed": {
+    "message": "同步失败，请检查网络或配置"
+  },
+  "monthView": {
+    "message": "月视图"
+  },
+  "settings": {
+    "message": "设置"
+  },
+  "config": {
+    "message": "配置"
+  },
+  "createEvent": {
+    "message": "创建日程"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "cancel": {
+    "message": "取消"
+  },
+  "delete": {
+    "message": "删除"
+  },
+  "confirm": {
+    "message": "确认"
+  },
+  "back": {
+    "message": "返回"
+  },
+  "close": {
+    "message": "关闭"
+  },
+  "title": {
+    "message": "标题"
+  },
+  "date": {
+    "message": "日期"
+  },
+  "time": {
+    "message": "时间"
+  },
+  "location": {
+    "message": "地点"
+  },
+  "notes": {
+    "message": "备注"
+  },
+  "calendar": {
+    "message": "日历"
+  },
+  "color": {
+    "message": "颜色"
+  },
+  "untitled": {
+    "message": "无标题"
+  },
+  "unknown": {
+    "message": "未知"
+  },
+  "more": {
+    "message": "更多"
+  },
+  "todayBtn": {
+    "message": "今天"
+  },
+  "weekdayMon": {
+    "message": "一"
+  },
+  "weekdayTue": {
+    "message": "二"
+  },
+  "weekdayWed": {
+    "message": "三"
+  },
+  "weekdayThu": {
+    "message": "四"
+  },
+  "weekdayFri": {
+    "message": "五"
+  },
+  "weekdaySat": {
+    "message": "六"
+  },
+  "weekdaySun": {
+    "message": "日"
+  },
+  "alertTitle": {
+    "message": "日程提醒"
+  },
+  "alertDismiss": {
+    "message": "关闭"
+  },
+  "alertSnooze": {
+    "message": "稍后提醒"
+  },
+  "minutesBefore": {
+    "message": "分钟前"
+  },
+  "eventSource": {
+    "message": "来源"
+  },
+  "eventCreated": {
+    "message": "创建时间"
+  },
+  "eventId": {
+    "message": "事件 ID"
+  },
+  "noTitle": {
+    "message": "无标题"
+  },
+  "aiCreate": {
+    "message": "AI 创建"
+  },
+  "inputHint": {
+    "message": "用自然语言描述日程..."
+  },
+  "parseError": {
+    "message": "无法解析日程信息，请重试"
+  },
+  "serverUrl": {
+    "message": "服务器地址"
+  },
+  "appleId": {
+    "message": "Apple ID"
+  },
+  "appPassword": {
+    "message": "App专用密码"
+  },
+  "calendarName": {
+    "message": "日历名称"
+  },
+  "configSaved": {
+    "message": "配置保存成功"
+  },
+  "configError": {
+    "message": "配置错误"
+  },
+  "notificationTitle": {
+    "message": "日程提醒"
+  },
+  "notificationBody": {
+    "message": "日程即将开始"
+  },
+  "contextMenuCreate": {
+    "message": "创建日历日程"
+  },
+  "configPageTitle": {
+    "message": "Apple 日历配置"
+  },
+  "cloudService": {
+    "message": "云服务"
+  },
+  "chinaICloud": {
+    "message": "中国 (iCloud.com.cn)"
+  },
+  "globalICloud": {
+    "message": "全球 (iCloud.com)"
+  },
+  "appleIdPlaceholder": {
+    "message": "例如: gao@gmail.com"
+  },
+  "help": {
+    "message": "帮助？"
+  },
+  "generateSteps": {
+    "message": "生成步骤："
+  },
+  "step1": {
+    "message": "1. 访问："
+  },
+  "step2": {
+    "message": "2. 登录后打开「App专用密码」"
+  },
+  "step3": {
+    "message": "3. 点击 + 创建，复制密码"
+  },
+  "selectCalendar": {
+    "message": "选择日历"
+  },
+  "pleaseSelectCalendar": {
+    "message": "请选择日历..."
+  },
+  "verifyAccount": {
+    "message": "验证账号"
+  },
+  "pleaseFillCredentials": {
+    "message": "请先填写账号和密码"
+  },
+  "verifying": {
+    "message": "验证中..."
+  },
+  "fetchingCalendars": {
+    "message": "正在获取日历列表..."
+  },
+  "backgroundNotResponding": {
+    "message": "插件后台未响应，请刷新页面或重载插件"
+  },
+  "selectCalendarHint": {
+    "message": "-- 请选择 --"
+  },
+  "saveConfig": {
+    "message": "保存配置"
+  },
+  "calendarFetchSuccess": {
+    "message": "日历列表获取成功，请从下拉框选择日历"
+  },
+  "unknownError": {
+    "message": "未知错误"
+  },
+  "calendarSyncSuccess": {
+    "message": "日历同步成功"
+  },
+  "eventCreatedSuccess": {
+    "message": "日程创建成功"
+  },
+  "eventItem": {
+    "message": "事项"
+  },
+  "startTime": {
+    "message": "开始"
+  },
+  "endTime": {
+    "message": "结束"
+  },
+  "syncedToICloud": {
+    "message": "已同步至 iCloud"
+  },
+  "notMarked": {
+    "message": "未标注"
+  },
+  "voice": {
+    "message": "🎤 语音"
+  },
+  "invite": {
+    "message": "📧 邀请"
+  },
+  "smartRecognize": {
+    "message": "智能识别"
+  },
+  "aiServiceHint": {
+    "message": "💡 需要先配置 AI 服务 →"
+  },
+  "goToSettings": {
+    "message": "前往设置"
+  },
+  "newEvent": {
+    "message": "新建日程"
+  },
+  "eventName": {
+    "message": "日程名称"
+  },
+  "locationOptional": {
+    "message": "地点（可选）"
+  },
+  "add": {
+    "message": "添加"
+  },
+  "aiNotConfiguredAlert": {
+    "message": "请先在「设置」中配置 AI 服务（Base URL + API Key）"
+  },
+  "recognizing": {
+    "message": "⌛ 识别中..."
+  },
+  "aiParseFailed": {
+    "message": "AI 识别未能理解时间信息，请检查配置是否有效或文本是否包含时间。"
+  },
+  "aiNotConfiguredAuto": {
+    "message": "请先在「设置」中配置 AI 服务，即可自动识别日程。"
+  },
+  "submitting": {
+    "message": "提交中..."
+  },
+  "createNew": {
+    "message": "+ 新建"
+  },
+  "todaySchedule": {
+    "message": "今天日程"
+  },
+  "tomorrowSchedule": {
+    "message": "明天日程"
+  },
+  "dayAfterTomorrowSchedule": {
+    "message": "后天日程"
+  },
+  "iCloud": {
+    "message": "iCloud"
+  },
+  "sync": {
+    "message": "同步"
+  },
+  "dayFullSun": {
+    "message": "星期日"
+  },
+  "dayFullMon": {
+    "message": "星期一"
+  },
+  "dayFullTue": {
+    "message": "星期二"
+  },
+  "dayFullWed": {
+    "message": "星期三"
+  },
+  "dayFullThu": {
+    "message": "星期四"
+  },
+  "dayFullFri": {
+    "message": "星期五"
+  },
+  "dayFullSat": {
+    "message": "星期六"
+  },
+  "deviceLabel": {
+    "message": "创建设备"
+  },
+  "icloudEventId": {
+    "message": "iCloud 事件 ID"
+  },
+  "syncingStatus": {
+    "message": "⌛ 正在同步中..."
+  },
+  "monthViewTitle": {
+    "message": "WeCal Sync - 月视图"
+  },
+  "loadingMonth": {
+    "message": "加载中..."
+  },
+  "monthViewFooter": {
+    "message": "WeCal Sync · 月视图"
+  },
+  "icloudWeb": {
+    "message": "iCloud Web"
+  },
+  "wecalSync": {
+    "message": "WeCal Sync"
+  },
+  "alertWindowTitle": {
+    "message": "日程提醒"
+  },
+  "untitledEvent": {
+    "message": "未命名日程"
+  },
+  "timePlaceholder": {
+    "message": "--:--"
+  },
+  "durationPlaceholder": {
+    "message": "-- 分钟"
+  },
+  "durationLabel": {
+    "message": "预估时长"
+  },
+  "locationLabel": {
+    "message": "日程地点"
+  },
+  "countdownBeforeStart": {
+    "message": "-- 分钟后开始"
+  },
+  "autoCloseHint": {
+    "message": "窗口将在 180s 后自动关闭"
+  },
+  "autoCloseHintFormat": {
+    "message": "窗口将在 $1s 后自动关闭"
+  },
+  "understand": {
+    "message": "我知道了"
+  },
+  "startingNow": {
+    "message": "🚨 正在开始"
+  },
+  "minutesBeforeStart": {
+    "message": "分钟后开始"
+  },
+  "minutesUnit": {
+    "message": "分钟"
+  },
+  "alertWindowTitleFormat": {
+    "message": "WeCal 提醒: $1"
+  },
+  "alertExecError": {
+    "message": "[弹窗] 逻辑执行异常"
+  },
+  "contentScriptReady": {
+    "message": "监控插件已就绪。"
+  },
+  "contextMenuTextSelected": {
+    "message": "用户选中了文本"
+  },
+  "contextMenuSidePanelError": {
+    "message": "无法自动打开侧边栏 (可能是非当前窗口)"
+  },
+  "contextMenuSidePanelApiError": {
+    "message": "sidePanel API 调用失败"
+  },
+  "contextMenuExists": {
+    "message": "菜单已存在，跳过创建。"
+  },
+  "contextMenuCreated": {
+    "message": "右键菜单创建成功！"
+  },
+  "aiService": {
+    "message": "AI 服务"
+  },
+  "freeApiKey": {
+    "message": "免费获取 API Key："
+  },
+  "visit": {
+    "message": "访问"
+  },
+  "registerZhipu": {
+    "message": "注册智谱 AI 开放平台"
+  },
+  "gotoApiKeys": {
+    "message": "进入「API Keys」页面添加 Key"
+  },
+  "glmFreeHint": {
+    "message": "glm-4-flash 模型完全免费。"
+  },
+  "apiEndpoint": {
+    "message": "接口地址"
+  },
+  "model": {
+    "message": "模型"
+  },
+  "apiKey": {
+    "message": "API Key"
+  },
+  "pasteApiKey": {
+    "message": "粘贴 API Key"
+  },
+  "openaiCompatHint": {
+    "message": "支持任何 OpenAI 兼容格式。默认 glm-4-flash（免费）。"
+  },
+  "remindBefore": {
+    "message": "提醒提前"
+  },
+  "30min": {
+    "message": "30 分钟"
+  },
+  "15min": {
+    "message": "15 分钟"
+  },
+  "5min": {
+    "message": "5 分钟"
+  },
+  "atStart": {
+    "message": "开始时"
+  },
+  "about": {
+    "message": "关于"
+  },
+  "saveSettings": {
+    "message": "保存设置"
+  },
+  "settingsSaved": {
+    "message": "设置已保存"
+  }
+}

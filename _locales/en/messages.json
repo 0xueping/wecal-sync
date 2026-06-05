@@ -1,0 +1,491 @@
+{
+  "appName": {
+    "message": "WeCal Sync - Apple Calendar Assistant"
+  },
+  "appDesc": {
+    "message": "Sync Apple iCloud Calendar with准时弹窗并鸣响强力告警音"
+  },
+  "appTitle": {
+    "message": "WeCal Sync - Apple Calendar Assistant"
+  },
+  "loading": {
+    "message": "Initializing..."
+  },
+  "today": {
+    "message": "Today"
+  },
+  "tomorrow": {
+    "message": "Tomorrow"
+  },
+  "dayAfterTomorrow": {
+    "message": "Day After Tomorrow"
+  },
+  "noEvents": {
+    "message": "No events scheduled"
+  },
+  "lastSync": {
+    "message": "Last synced"
+  },
+  "syncNow": {
+    "message": "Sync Now"
+  },
+  "syncing": {
+    "message": "Syncing..."
+  },
+  "syncFailed": {
+    "message": "Sync failed, check network or settings"
+  },
+  "monthView": {
+    "message": "Month View"
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "config": {
+    "message": "Configuration"
+  },
+  "createEvent": {
+    "message": "Create Event"
+  },
+  "save": {
+    "message": "Save"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "delete": {
+    "message": "Delete"
+  },
+  "confirm": {
+    "message": "Confirm"
+  },
+  "back": {
+    "message": "Back"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "title": {
+    "message": "Title"
+  },
+  "date": {
+    "message": "Date"
+  },
+  "time": {
+    "message": "Time"
+  },
+  "location": {
+    "message": "Location"
+  },
+  "notes": {
+    "message": "Notes"
+  },
+  "calendar": {
+    "message": "Calendar"
+  },
+  "color": {
+    "message": "Color"
+  },
+  "untitled": {
+    "message": "Untitled"
+  },
+  "unknown": {
+    "message": "Unknown"
+  },
+  "more": {
+    "message": "more"
+  },
+  "todayBtn": {
+    "message": "Today"
+  },
+  "weekdayMon": {
+    "message": "Mon"
+  },
+  "weekdayTue": {
+    "message": "Tue"
+  },
+  "weekdayWed": {
+    "message": "Wed"
+  },
+  "weekdayThu": {
+    "message": "Thu"
+  },
+  "weekdayFri": {
+    "message": "Fri"
+  },
+  "weekdaySat": {
+    "message": "Sat"
+  },
+  "weekdaySun": {
+    "message": "Sun"
+  },
+  "alertTitle": {
+    "message": "Event Reminder"
+  },
+  "alertDismiss": {
+    "message": "Dismiss"
+  },
+  "alertSnooze": {
+    "message": "Snooze"
+  },
+  "minutesBefore": {
+    "message": "minutes before"
+  },
+  "eventSource": {
+    "message": "Source"
+  },
+  "eventCreated": {
+    "message": "Created"
+  },
+  "eventId": {
+    "message": "Event ID"
+  },
+  "noTitle": {
+    "message": "No Title"
+  },
+  "aiCreate": {
+    "message": "AI Create"
+  },
+  "inputHint": {
+    "message": "Describe the event in natural language..."
+  },
+  "parseError": {
+    "message": "Unable to parse event info, please try again"
+  },
+  "serverUrl": {
+    "message": "Server URL"
+  },
+  "appleId": {
+    "message": "Apple ID"
+  },
+  "appPassword": {
+    "message": "App-Specific Password"
+  },
+  "calendarName": {
+    "message": "Calendar Name"
+  },
+  "configSaved": {
+    "message": "Configuration saved successfully"
+  },
+  "configError": {
+    "message": "Configuration error"
+  },
+  "notificationTitle": {
+    "message": "Event Reminder"
+  },
+  "notificationBody": {
+    "message": "Event starts soon"
+  },
+  "contextMenuCreate": {
+    "message": "Create Calendar Event"
+  },
+  "configPageTitle": {
+    "message": "Apple Calendar Configuration"
+  },
+  "cloudService": {
+    "message": "Cloud Service"
+  },
+  "chinaICloud": {
+    "message": "China (iCloud.com.cn)"
+  },
+  "globalICloud": {
+    "message": "Global (iCloud.com)"
+  },
+  "appleIdPlaceholder": {
+    "message": "e.g. gao@gmail.com"
+  },
+  "help": {
+    "message": "Help?"
+  },
+  "generateSteps": {
+    "message": "Steps to generate:"
+  },
+  "step1": {
+    "message": "1. Visit: "
+  },
+  "step2": {
+    "message": "2. Log in and open \"App-Specific Passwords\""
+  },
+  "step3": {
+    "message": "3. Click + to create, copy password"
+  },
+  "selectCalendar": {
+    "message": "Select Calendar"
+  },
+  "pleaseSelectCalendar": {
+    "message": "Please select calendar..."
+  },
+  "verifyAccount": {
+    "message": "Verify Account"
+  },
+  "pleaseFillCredentials": {
+    "message": "Please fill in your Apple ID and password first"
+  },
+  "verifying": {
+    "message": "Verifying..."
+  },
+  "fetchingCalendars": {
+    "message": "Fetching calendar list..."
+  },
+  "backgroundNotResponding": {
+    "message": "Extension background not responding. Please refresh or reload."
+  },
+  "selectCalendarHint": {
+    "message": "-- Select --"
+  },
+  "saveConfig": {
+    "message": "Save Configuration"
+  },
+  "calendarFetchSuccess": {
+    "message": "Calendar list fetched successfully. Please select a calendar."
+  },
+  "unknownError": {
+    "message": "Unknown error"
+  },
+  "calendarSyncSuccess": {
+    "message": "Calendar synced successfully"
+  },
+  "eventCreatedSuccess": {
+    "message": "Event created successfully"
+  },
+  "eventItem": {
+    "message": "Item"
+  },
+  "startTime": {
+    "message": "Start"
+  },
+  "endTime": {
+    "message": "End"
+  },
+  "syncedToICloud": {
+    "message": "Synced to iCloud"
+  },
+  "notMarked": {
+    "message": "Not specified"
+  },
+  "voice": {
+    "message": "🎤 Voice"
+  },
+  "invite": {
+    "message": "📧 Invite"
+  },
+  "smartRecognize": {
+    "message": "Smart Recognize"
+  },
+  "aiServiceHint": {
+    "message": "💡 AI service needs to be configured first →"
+  },
+  "goToSettings": {
+    "message": "Go to Settings"
+  },
+  "newEvent": {
+    "message": "New Event"
+  },
+  "eventName": {
+    "message": "Event Name"
+  },
+  "locationOptional": {
+    "message": "Location (optional)"
+  },
+  "add": {
+    "message": "Add"
+  },
+  "aiNotConfiguredAlert": {
+    "message": "Please configure AI service in Settings first (Base URL + API Key)"
+  },
+  "recognizing": {
+    "message": "⌛ Recognizing..."
+  },
+  "aiParseFailed": {
+    "message": "AI failed to parse time information. Please check your configuration or if the text contains a time."
+  },
+  "aiNotConfiguredAuto": {
+    "message": "Please configure AI service in Settings first to enable auto-recognition."
+  },
+  "submitting": {
+    "message": "Submitting..."
+  },
+  "createNew": {
+    "message": "+ New"
+  },
+  "todaySchedule": {
+    "message": "Today's Schedule"
+  },
+  "tomorrowSchedule": {
+    "message": "Tomorrow's Schedule"
+  },
+  "dayAfterTomorrowSchedule": {
+    "message": "Day After Tomorrow's Schedule"
+  },
+  "iCloud": {
+    "message": "iCloud"
+  },
+  "sync": {
+    "message": "Sync"
+  },
+  "dayFullSun": {
+    "message": "Sunday"
+  },
+  "dayFullMon": {
+    "message": "Monday"
+  },
+  "dayFullTue": {
+    "message": "Tuesday"
+  },
+  "dayFullWed": {
+    "message": "Wednesday"
+  },
+  "dayFullThu": {
+    "message": "Thursday"
+  },
+  "dayFullFri": {
+    "message": "Friday"
+  },
+  "dayFullSat": {
+    "message": "Saturday"
+  },
+  "deviceLabel": {
+    "message": "Device"
+  },
+  "icloudEventId": {
+    "message": "iCloud Event ID"
+  },
+  "syncingStatus": {
+    "message": "⌛ Syncing..."
+  },
+  "monthViewTitle": {
+    "message": "WeCal Sync - Month View"
+  },
+  "loadingMonth": {
+    "message": "Loading..."
+  },
+  "monthViewFooter": {
+    "message": "WeCal Sync · Month View"
+  },
+  "icloudWeb": {
+    "message": "iCloud Web"
+  },
+  "wecalSync": {
+    "message": "WeCal Sync"
+  },
+  "alertWindowTitle": {
+    "message": "Event Reminder"
+  },
+  "untitledEvent": {
+    "message": "Untitled Event"
+  },
+  "timePlaceholder": {
+    "message": "--:--"
+  },
+  "durationPlaceholder": {
+    "message": "-- min"
+  },
+  "durationLabel": {
+    "message": "Duration"
+  },
+  "locationLabel": {
+    "message": "Location"
+  },
+  "countdownBeforeStart": {
+    "message": "-- min before start"
+  },
+  "autoCloseHint": {
+    "message": "Window will auto-close in 180s"
+  },
+  "autoCloseHintFormat": {
+    "message": "Window will auto-close in $1s"
+  },
+  "understand": {
+    "message": "Got it"
+  },
+  "startingNow": {
+    "message": "🚨 Starting now"
+  },
+  "minutesBeforeStart": {
+    "message": "min before start"
+  },
+  "minutesUnit": {
+    "message": "min"
+  },
+  "alertWindowTitleFormat": {
+    "message": "WeCal Reminder: $1"
+  },
+  "alertExecError": {
+    "message": "[Alert] Execution error"
+  },
+  "contentScriptReady": {
+    "message": "Monitoring extension ready."
+  },
+  "contextMenuTextSelected": {
+    "message": "User selected text"
+  },
+  "contextMenuSidePanelError": {
+    "message": "Cannot auto-open side panel (may not be current window)"
+  },
+  "contextMenuSidePanelApiError": {
+    "message": "sidePanel API call failed"
+  },
+  "contextMenuExists": {
+    "message": "Menu already exists, skipping creation."
+  },
+  "contextMenuCreated": {
+    "message": "Right-click menu created successfully!"
+  },
+  "aiService": {
+    "message": "AI Service"
+  },
+  "freeApiKey": {
+    "message": "Get API Key for free:"
+  },
+  "visit": {
+    "message": "Visit"
+  },
+  "registerZhipu": {
+    "message": "Register on Zhipu AI Open Platform"
+  },
+  "gotoApiKeys": {
+    "message": "Go to API Keys page and add your key"
+  },
+  "glmFreeHint": {
+    "message": "glm-4-flash model is completely free."
+  },
+  "apiEndpoint": {
+    "message": "API Endpoint"
+  },
+  "model": {
+    "message": "Model"
+  },
+  "apiKey": {
+    "message": "API Key"
+  },
+  "pasteApiKey": {
+    "message": "Paste API Key"
+  },
+  "openaiCompatHint": {
+    "message": "Supports any OpenAI-compatible format. Default: glm-4-flash (free)."
+  },
+  "remindBefore": {
+    "message": "Remind Before"
+  },
+  "30min": {
+    "message": "30 minutes"
+  },
+  "15min": {
+    "message": "15 minutes"
+  },
+  "5min": {
+    "message": "5 minutes"
+  },
+  "atStart": {
+    "message": "At start"
+  },
+  "about": {
+    "message": "About"
+  },
+  "saveSettings": {
+    "message": "Save Settings"
+  },
+  "settingsSaved": {
+    "message": "Settings saved"
+  }
+}

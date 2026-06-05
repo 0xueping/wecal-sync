@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>__MSG_monthViewTitle__</title>
+    <link rel="stylesheet" href="../ui/global.css">
+    <style>
+        /* 月视图专属样式 — 继承 global.css 的设计token */
+        html, body {
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .app-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 28px 32px 16px;
+            max-width: none;
+            overflow: hidden;
+            min-height: 0;
+        }
+
+        /* 顶部栏 */
+        .month-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 18px;
+            flex-shrink: 0;
+        }
+        .month-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+        .month-nav {
+            display: flex;
+            gap: 8px;
+        }
+        .month-nav button {
+            width: 36px;
+            height: 36px;
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-sm);
+            color: var(--text-secondary);
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+        .month-nav button:hover {
+            background: rgba(255,255,255,0.8);
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+        .month-nav button:active { transform: scale(0.95); }
+
+        /* 今天按钮 */
+        .today-btn {
+            padding: 6px 16px;
+            background: var(--primary-soft);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-pill);
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+        .today-btn:hover {
+            background: rgba(99, 102, 241, 0.18);
+        }
+
+        /* 星期行 */
+        .weekday-row {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 4px;
+            margin-bottom: 6px;
+            flex-shrink: 0;
+        }
+        .weekday-cell {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+            padding: 6px 0;
+            letter-spacing: 0.5px;
+        }
+
+        /* 日历网格 — flex 自适应拉伸 */
+        .calendar-grid {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--glass-shadow);
+            overflow: hidden;
+            min-height: 0;
+        }
+
+        .calendar-row {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 2px;
+            background: transparent;
+            min-height: 0;
+            padding: 2px;
+        }
+        .calendar-row:last-child .day-cell { border-bottom: none; }
+
+        .day-cell {
+            display: flex;
+            flex-direction: column;
+            padding: 8px 10px;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid rgba(99, 102, 241, 0.18);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.15s;
+            min-height: 0;
+            overflow: hidden;
+        }
+        .day-cell:hover {
+            background: rgba(255, 255, 255, 0.75);
+            border-color: rgba(99, 102, 241, 0.2);
+        }
+        .day-cell.other-month {
+            background: rgba(255, 255, 255, 0.25);
+            border-color: rgba(99, 102, 241, 0.1);
+        }
+        .day-cell.other-month .day-number {
+            color: var(--text-muted);
+            opacity: 0.4;
+        }
+        .day-cell.today {
+            background: rgba(99, 102, 241, 0.08);
+            border-color: rgba(99, 102, 241, 0.25);
+        }
+        .day-cell.today .day-number {
+            background: var(--primary);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .day-number {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 2px;
+            flex-shrink: 0;
+        }
+
+        /* 日程小圆点+缩写 */
+        .event-dot-list {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            overflow: hidden;
+        }
+        .event-dot-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 10px;
+            color: var(--text-secondary);
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            flex-shrink: 0;
+        }
+        .event-dot-bullet {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .event-dot-label {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        /* 更多日程提示 */
+        .more-events {
+            font-size: 10px;
+            color: var(--primary);
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+        .more-events:hover {
+            text-decoration: underline;
+        }
+
+        /* 日程浮窗 */
+        .event-hover-tooltip {
+            position: fixed;
+            z-index: 9999;
+            min-width: 200px;
+            max-width: 280px;
+            padding: 12px 14px;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(99, 102, 241, 0.18), 0 2px 8px rgba(0,0,0,0.08);
+            pointer-events: none;
+            animation: tooltipFadeIn 0.15s ease-out;
+        }
+        @keyframes tooltipFadeIn {
+            from { opacity: 0; transform: translateY(4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .tooltip-row { display: flex; flex-direction: column; margin-bottom: 6px; }
+        .tooltip-row:last-child { margin-bottom: 0; }
+        .tooltip-label { font-size: 10px; color: var(--text-muted); margin-bottom: 2px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .tooltip-value { font-size: 12px; color: var(--text-primary); font-weight: 500; line-height: 1.4; word-break: break-all; }
+        .tooltip-value.title { font-size: 13px; font-weight: 600; }
+
+        /* 加载/空状态 */
+        .loading-state, .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+        .empty-state .icon { font-size: 48px; margin-bottom: 16px; }
+        .empty-state .hint { font-size: 12px; margin-top: 8px; }
+
+        /* 底部 */
+        .footer {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 11px;
+            color: var(--text-muted);
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- 顶部 -->
+        <div class="month-header">
+            <div style="display:flex;align-items:center;gap:12px;">
+                <span class="month-title" id="monthTitle">2026年5月</span>
+                <button class="today-btn" id="todayBtn">__MSG_todayBtn__</button>
+            </div>
+            <div class="month-nav">
+                <button id="prevMonth">‹</button>
+                <button id="nextMonth">›</button>
+            </div>
+        </div>
+
+        <!-- 星期行 -->
+        <div class="weekday-row">
+            <div class="weekday-cell">__MSG_weekdayMon__</div>
+            <div class="weekday-cell">__MSG_weekdayTue__</div>
+            <div class="weekday-cell">__MSG_weekdayWed__</div>
+            <div class="weekday-cell">__MSG_weekdayThu__</div>
+            <div class="weekday-cell">__MSG_weekdayFri__</div>
+            <div class="weekday-cell">__MSG_weekdaySat__</div>
+            <div class="weekday-cell">__MSG_weekdaySun__</div>
+        </div>
+
+        <!-- 日历网格 -->
+        <div id="calendarGrid" class="calendar-grid">
+            <div class="loading-state">__MSG_loadingMonth__</div>
+        </div>
+
+        <div class="footer">__MSG_monthViewFooter__</div>
+    </div>
+
+    <script src="month-view.js"></script>
+</body>
+</html>

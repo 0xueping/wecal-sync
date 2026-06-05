@@ -1,0 +1,60 @@
+<div class="fade-in" style="padding:12px 16px 72px;">
+    <div class="glass-card">
+        <h2 class="page-title">__MSG_configPageTitle__</h2>
+        <div style="display:flex;flex-direction:column;gap:16px;">
+            <!-- 服务入口 -->
+            <div>
+                <label style="display:block;font-size:12px;color:var(--text-secondary);margin-bottom:6px;">__MSG_cloudService__</label>
+                <div class="select-container">
+                    <select id="serverUrl" class="input-field" style="padding-right:32px;">
+                        <option value="caldav.icloud.com.cn">__MSG_chinaICloud__</option>
+                        <option value="caldav.icloud.com">__MSG_globalICloud__</option>
+                    </select>
+                    <div class="select-arrow">▼</div>
+                </div>
+            </div>
+            
+            <!-- Apple ID -->
+            <div>
+                <label style="display:block;font-size:12px;color:var(--text-secondary);margin-bottom:6px;">Apple ID</label>
+                <input id="appleId" type="email" class="input-field" placeholder="__MSG_appleIdPlaceholder__">
+            </div>
+            
+            <!-- 密码 -->
+            <div>
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+                    <label style="font-size:12px;color:var(--text-secondary);">__MSG_appPassword__</label>
+                    <div class="help-trigger">
+                        __MSG_help__
+                        <div class="help-tooltip">
+                            <div class="tooltip-title">__MSG_generateSteps__</div>
+                            <ol class="tooltip-list">
+                                <li>__MSG_step1__<a href="https://account.apple.com/account/manage" target="_blank">account.apple.com</a></li>
+                                <li>__MSG_step2__</li>
+                                <li>__MSG_step3__</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <input id="appPassword" type="password" class="input-field" placeholder="xxxx-xxxx-xxxx-xxxx">
+            </div>
+            
+            <!-- 日历选择 (隐藏) -->
+            <div id="calendar-selection-section" class="hidden">
+                <label style="display:block;font-size:12px;color:var(--text-secondary);margin-bottom:6px;">__MSG_selectCalendar__</label>
+                <div class="select-container">
+                    <select id="calendarSelect" class="input-field" style="padding-right:32px;">
+                        <option value="" disabled selected>__MSG_pleaseSelectCalendar__</option>
+                    </select>
+                    <div class="select-arrow">▼</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 操作按钮 -->
+    <button id="actionBtn" class="btn-primary" style="margin-top:20px;">__MSG_verifyAccount__</button>
+    
+    <!-- 状态 -->
+    <div id="configStatusMsg" class="text-center" style="font-size:12px;color:var(--text-muted);margin-top:12px;"></div>
+</div>

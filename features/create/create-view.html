@@ -1,0 +1,55 @@
+<div class="fade-in" style="padding:12px 16px 72px;">
+    <!-- 智能识别 -->
+    <div class="glass-card mb-4">
+        <textarea id="raw-event-text" class="input-field" style="min-height:140px;padding:14px;font-size:13px;" placeholder="__MSG_inputHint__"></textarea>
+        <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin-top:10px;">
+            <div style="display:flex;gap:8px;">
+                <button id="voiceBtn" class="btn-outline cursor-not-allowed opacity-50">__MSG_voice__</button>
+                <button id="inviteBtn" class="btn-outline cursor-not-allowed opacity-50">__MSG_invite__</button>
+            </div>
+            <button id="recognizeBtn" class="btn-primary" style="width:auto;padding:10px 22px;font-size:12px;border-radius:var(--radius-pill);">__MSG_smartRecognize__</button>
+        </div>
+        <div style="margin-top:12px;padding-top:12px;border-top:1px solid rgba(99, 102, 241, 0.1);">
+            <div style="font-size:11px;color:var(--text-muted);">
+                __MSG_aiServiceHint__
+                <span id="gotoSettingsHint" style="color:var(--primary);cursor:pointer;font-weight:500;">__MSG_goToSettings__</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 表单 -->
+    <div id="create-form-container" style="display:flex;flex-direction:column;gap:12px;">
+        <div class="glass-card">
+            <h2 class="page-title" style="margin-bottom:16px;">__MSG_newEvent__</h2>
+            <div style="display:flex;flex-direction:column;gap:12px;">
+                <div>
+                    <label style="display:block;font-size:11px;color:var(--text-muted);margin-bottom:4px;">__MSG_eventName__</label>
+                    <input id="event-title" type="text" class="input-field" placeholder="__MSG_eventName__">
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                    <div>
+                        <label style="display:block;font-size:11px;color:var(--text-muted);margin-bottom:4px;">__MSG_startTime__</label>
+                        <input id="event-start" type="datetime-local" class="input-field">
+                    </div>
+                    <div>
+                        <label style="display:block;font-size:11px;color:var(--text-muted);margin-bottom:4px;">__MSG_endTime__</label>
+                        <input id="event-end" type="datetime-local" class="input-field">
+                    </div>
+                </div>
+                <div>
+                    <label style="display:block;font-size:11px;color:var(--text-muted);margin-bottom:4px;">__MSG_location__</label>
+                    <input id="event-location" type="text" class="input-field" placeholder="__MSG_locationOptional__">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 状态 -->
+    <div id="submissionStatus" style="text-align:center;font-size:12px;color:var(--error);margin-top:8px;display:none;"></div>
+
+    <!-- 底部操作 (true buttons) -->
+    <div style="display:flex;gap:10px;margin-top:20px;padding-bottom:12px;">
+        <button id="cancelCreateBtn" class="btn-secondary">__MSG_cancel__</button>
+        <button id="submitEventBtn" class="btn-primary">__MSG_add__</button>
+    </div>
+</div>
