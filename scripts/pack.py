@@ -22,9 +22,9 @@ def main():
     zip_path = os.path.join(dist_dir, zip_name)
 
     # Directories/files to include (traverse recursively)
-    include_dirs = ['_locales', 'icons', 'ui', 'background',
+    include_dirs = ['_locales', 'icons', 'ui', 'background', 'common',
                     'content_scripts', 'features', 'lib']
-    include_files = ['manifest.json']
+    include_files = ['manifest.json', 'content.js']
 
     with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zf:
         for fname in include_files:
@@ -39,6 +39,8 @@ def main():
                 print(f'  - {dname}/ (not found, skipped)')
                 continue
             for root, dirs, files in os.walk(dpath):
+                # Exclude backup files from production zip
+                files = [f for f in files if not f.endswith('.bak')]
                 for f in files:
                     full = os.path.join(root, f)
                     rel = os.path.relpath(full, project_dir)
