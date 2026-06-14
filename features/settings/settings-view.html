@@ -29,11 +29,15 @@
                 </div>
                 <div>
                     <label style="display:block;font-size:11px;color:var(--text-muted);margin-bottom:4px;">__MSG_model__</label>
-                    <input id="aiModel" type="text" class="input-field" placeholder="glm-4-flash">
+                    <input id="aiModel" type="text" class="input-field" placeholder="glm-4.5-flash">
                 </div>
                 <div>
                     <label style="display:block;font-size:11px;color:var(--text-muted);margin-bottom:4px;">__MSG_apiKey__</label>
                     <input id="aiKey" type="password" class="input-field" placeholder="__MSG_pasteApiKey__">
+                </div>
+                <div>
+                    <button id="testAiBtn" class="btn-secondary" style="width:100%;padding:8px;font-size:12px;">__MSG_testConnection__</button>
+                    <div id="testAiStatus" class="text-xs mt-1" style="font-size:11px;min-height:18px;margin-top:4px;"></div>
                 </div>
             </div>
             <div style="font-size:11px;color:var(--text-muted);margin-top:10px;line-height:1.5;">

@@ -1,0 +1,6 @@
+node_modules/
+*.bak
+*.obfuscated.*
+backup-core/
+dist/*.zip
+package-lock.json

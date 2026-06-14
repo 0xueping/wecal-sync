@@ -1,0 +1,587 @@
+[
+  {
+    "obfuscatedAt": "2026-06-08T12:13:22.199Z",
+    "version": "1.0.0",
+    "files": [
+      {
+        "file": "caldav-client.js",
+        "originalPath": "backup-core/caldav-client.original.js",
+        "outputPath": "background/caldav-client.js",
+        "originalSize": 5957,
+        "obfuscatedSize": 13581,
+        "originalMd5": "e798bef6dec3ad9315d9e508c1c83730",
+        "obfuscatedMd5": "e05db15477c83f4d4a5592427c908cc2",
+        "backupPath": "backup-core/caldav-client.original.js",
+        "preObfuscateBackup": "background/caldav-client.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "sync-engine.js",
+        "originalPath": "backup-core/sync-engine.original.js",
+        "outputPath": "background/sync-engine.js",
+        "originalSize": 5340,
+        "obfuscatedSize": 13053,
+        "originalMd5": "aa20349c70a1cd0eb8e06a4676be2d1b",
+        "obfuscatedMd5": "ac9758eb8c51abe1ffa70d32c9cf435f",
+        "backupPath": "backup-core/sync-engine.original.js",
+        "preObfuscateBackup": "background/sync-engine.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "xml-utils.js",
+        "originalPath": "backup-core/xml-utils.original.js",
+        "outputPath": "common/xml-utils.js",
+        "originalSize": 3651,
+        "obfuscatedSize": 8477,
+        "originalMd5": "ab835851c00be7e7691549c327567be1",
+        "obfuscatedMd5": "a22673c7072e5e918db63426948cd974",
+        "backupPath": "backup-core/xml-utils.original.js",
+        "preObfuscateBackup": "common/xml-utils.js.pre-obfuscate.bak"
+      }
+    ]
+  },
+  {
+    "obfuscatedAt": "2026-06-08T12:25:04.696Z",
+    "version": "1.0.0",
+    "files": [
+      {
+        "file": "caldav-client.js",
+        "originalPath": "backup-core/caldav-client.original.js",
+        "outputPath": "background/caldav-client.js",
+        "originalSize": 5957,
+        "obfuscatedSize": 16227,
+        "originalMd5": "e798bef6dec3ad9315d9e508c1c83730",
+        "obfuscatedMd5": "b1f2c5127aed40e4e584e36ae8a3cc67",
+        "backupPath": "backup-core/caldav-client.original.js",
+        "preObfuscateBackup": "background/caldav-client.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "sync-engine.js",
+        "originalPath": "backup-core/sync-engine.original.js",
+        "outputPath": "background/sync-engine.js",
+        "originalSize": 5340,
+        "obfuscatedSize": 13405,
+        "originalMd5": "aa20349c70a1cd0eb8e06a4676be2d1b",
+        "obfuscatedMd5": "2e2c7843b64ee8cf3d235053dd95d7ea",
+        "backupPath": "backup-core/sync-engine.original.js",
+        "preObfuscateBackup": "background/sync-engine.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "xml-utils.js",
+        "originalPath": "backup-core/xml-utils.original.js",
+        "outputPath": "common/xml-utils.js",
+        "originalSize": 3651,
+        "obfuscatedSize": 17148,
+        "originalMd5": "ab835851c00be7e7691549c327567be1",
+        "obfuscatedMd5": "aab9a4e63b9f6f2bc9f57ba466b6bdd0",
+        "backupPath": "backup-core/xml-utils.original.js",
+        "preObfuscateBackup": "common/xml-utils.js.pre-obfuscate.bak"
+      }
+    ]
+  },
+  {
+    "obfuscatedAt": "2026-06-08T12:53:29.595Z",
+    "version": "1.0.0",
+    "files": [
+      {
+        "file": "caldav-client.js",
+        "originalPath": "backup-core/caldav-client.original.js",
+        "outputPath": "background/caldav-client.js",
+        "originalSize": 5957,
+        "obfuscatedSize": 16210,
+        "originalMd5": "e798bef6dec3ad9315d9e508c1c83730",
+        "obfuscatedMd5": "b328e41bd2337bf4098b13280020ad72",
+        "backupPath": "backup-core/caldav-client.original.js",
+        "preObfuscateBackup": "background/caldav-client.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "sync-engine.js",
+        "originalPath": "backup-core/sync-engine.original.js",
+        "outputPath": "background/sync-engine.js",
+        "originalSize": 5340,
+        "obfuscatedSize": 12666,
+        "originalMd5": "aa20349c70a1cd0eb8e06a4676be2d1b",
+        "obfuscatedMd5": "6d312c6ca82bcc0bb24de85b660c265b",
+        "backupPath": "backup-core/sync-engine.original.js",
+        "preObfuscateBackup": "background/sync-engine.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "xml-utils.js",
+        "originalPath": "backup-core/xml-utils.original.js",
+        "outputPath": "common/xml-utils.js",
+        "originalSize": 3651,
+        "obfuscatedSize": 12980,
+        "originalMd5": "ab835851c00be7e7691549c327567be1",
+        "obfuscatedMd5": "fc8bec9b59a7d5f7bfb263efc21ae302",
+        "backupPath": "backup-core/xml-utils.original.js",
+        "preObfuscateBackup": "common/xml-utils.js.pre-obfuscate.bak"
+      }
+    ]
+  },
+  {
+    "obfuscatedAt": "2026-06-08T19:00:02.783Z",
+    "version": "1.0.0",
+    "files": [
+      {
+        "file": "caldav-client.js",
+        "originalPath": "backup-core/caldav-client.original.js",
+        "outputPath": "background/caldav-client.js",
+        "originalSize": 5957,
+        "obfuscatedSize": 15114,
+        "originalMd5": "e798bef6dec3ad9315d9e508c1c83730",
+        "obfuscatedMd5": "6fd5548aae4eb11a7a9b10b8bd4d74eb",
+        "backupPath": "backup-core/caldav-client.original.js",
+        "preObfuscateBackup": "background/caldav-client.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "sync-engine.js",
+        "originalPath": "backup-core/sync-engine.original.js",
+        "outputPath": "background/sync-engine.js",
+        "originalSize": 5340,
+        "obfuscatedSize": 12876,
+        "originalMd5": "aa20349c70a1cd0eb8e06a4676be2d1b",
+        "obfuscatedMd5": "85b76fb31436cbb50f47bd02a55bf3cb",
+        "backupPath": "backup-core/sync-engine.original.js",
+        "preObfuscateBackup": "background/sync-engine.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "xml-utils.js",
+        "originalPath": "backup-core/xml-utils.original.js",
+        "outputPath": "common/xml-utils.js",
+        "originalSize": 3651,
+        "obfuscatedSize": 10159,
+        "originalMd5": "ab835851c00be7e7691549c327567be1",
+        "obfuscatedMd5": "0b652c19faac1f8915584ccf8cf17f1e",
+        "backupPath": "backup-core/xml-utils.original.js",
+        "preObfuscateBackup": "common/xml-utils.js.pre-obfuscate.bak"
+      }
+    ]
+  },
+  {
+    "obfuscatedAt": "2026-06-08T19:22:20.512Z",
+    "version": "1.0.0",
+    "files": [
+      {
+        "file": "caldav-client.js",
+        "originalPath": "backup-core/caldav-client.original.js",
+        "outputPath": "background/caldav-client.js",
+        "originalSize": 5957,
+        "obfuscatedSize": 15716,
+        "originalMd5": "e798bef6dec3ad9315d9e508c1c83730",
+        "obfuscatedMd5": "6e0761ae74054824336bc9e8b2bc33c3",
+        "backupPath": "backup-core/caldav-client.original.js",
+        "preObfuscateBackup": "background/caldav-client.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "sync-engine.js",
+        "originalPath": "backup-core/sync-engine.original.js",
+        "outputPath": "background/sync-engine.js",
+        "originalSize": 5340,
+        "obfuscatedSize": 12822,
+        "originalMd5": "aa20349c70a1cd0eb8e06a4676be2d1b",
+        "obfuscatedMd5": "99d0a0802742b723ccd354722e53692c",
+        "backupPath": "backup-core/sync-engine.original.js",
+        "preObfuscateBackup": "background/sync-engine.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "xml-utils.js",
+        "originalPath": "backup-core/xml-utils.original.js",
+        "outputPath": "common/xml-utils.js",
+        "originalSize": 3651,
+        "obfuscatedSize": 14308,
+        "originalMd5": "ab835851c00be7e7691549c327567be1",
+        "obfuscatedMd5": "9b45e0ded412fe510088d74f16ee830e",
+        "backupPath": "backup-core/xml-utils.original.js",
+        "preObfuscateBackup": "common/xml-utils.js.pre-obfuscate.bak"
+      }
+    ]
+  },
+  {
+    "obfuscatedAt": "2026-06-08T19:26:09.513Z",
+    "version": "1.0.0",
+    "files": [
+      {
+        "file": "caldav-client.js",
+        "originalPath": "backup-core/caldav-client.original.js",
+        "outputPath": "background/caldav-client.js",
+        "originalSize": 5957,
+        "obfuscatedSize": 16260,
+        "originalMd5": "e798bef6dec3ad9315d9e508c1c83730",
+        "obfuscatedMd5": "372264113b25c0ea5c528b48ca9221ad",
+        "backupPath": "backup-core/caldav-client.original.js",
+        "preObfuscateBackup": "background/caldav-client.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "sync-engine.js",
+        "originalPath": "backup-core/sync-engine.original.js",
+        "outputPath": "background/sync-engine.js",
+        "originalSize": 5340,
+        "obfuscatedSize": 12906,
+        "originalMd5": "aa20349c70a1cd0eb8e06a4676be2d1b",
+        "obfuscatedMd5": "5494473e1a0c2e19eaf59049fdee90d3",
+        "backupPath": "backup-core/sync-engine.original.js",
+        "preObfuscateBackup": "background/sync-engine.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "xml-utils.js",
+        "originalPath": "backup-core/xml-utils.original.js",
+        "outputPath": "common/xml-utils.js",
+        "originalSize": 3651,
+        "obfuscatedSize": 9111,
+        "originalMd5": "ab835851c00be7e7691549c327567be1",
+        "obfuscatedMd5": "db5f34a276081900692eebd2bdf2de61",
+        "backupPath": "backup-core/xml-utils.original.js",
+        "preObfuscateBackup": "common/xml-utils.js.pre-obfuscate.bak"
+      }
+    ]
+  },
+  {
+    "obfuscatedAt": "2026-06-08T19:56:09.473Z",
+    "version": "1.0.0",
+    "files": [
+      {
+        "file": "caldav-client.js",
+        "originalPath": "backup-core/caldav-client.original.js",
+        "outputPath": "background/caldav-client.js",
+        "originalSize": 5957,
+        "obfuscatedSize": 16603,
+        "originalMd5": "e798bef6dec3ad9315d9e508c1c83730",
+        "obfuscatedMd5": "a1dfa55a0c15ee5a30cdba8a97a7a230",
+        "backupPath": "backup-core/caldav-client.original.js",
+        "preObfuscateBackup": "background/caldav-client.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "sync-engine.js",
+        "originalPath": "backup-core/sync-engine.original.js",
+        "outputPath": "background/sync-engine.js",
+        "originalSize": 5340,
+        "obfuscatedSize": 12129,
+        "originalMd5": "aa20349c70a1cd0eb8e06a4676be2d1b",
+        "obfuscatedMd5": "d2c31e77bbc2f1a80252af5843014f27",
+        "backupPath": "backup-core/sync-engine.original.js",
+        "preObfuscateBackup": "background/sync-engine.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "xml-utils.js",
+        "originalPath": "backup-core/xml-utils.original.js",
+        "outputPath": "common/xml-utils.js",
+        "originalSize": 3651,
+        "obfuscatedSize": 13628,
+        "originalMd5": "ab835851c00be7e7691549c327567be1",
+        "obfuscatedMd5": "be9b0afe60836497a0c4dd24d4f4eb8b",
+        "backupPath": "backup-core/xml-utils.original.js",
+        "preObfuscateBackup": "common/xml-utils.js.pre-obfuscate.bak"
+      }
+    ]
+  },
+  {
+    "obfuscatedAt": "2026-06-08T19:57:42.798Z",
+    "version": "1.0.0",
+    "files": [
+      {
+        "file": "caldav-client.js",
+        "originalPath": "backup-core/caldav-client.original.js",
+        "outputPath": "background/caldav-client.js",
+        "originalSize": 5957,
+        "obfuscatedSize": 15218,
+        "originalMd5": "e798bef6dec3ad9315d9e508c1c83730",
+        "obfuscatedMd5": "7cf1bf961fcaf931066175e6bf0b1bac",
+        "backupPath": "backup-core/caldav-client.original.js",
+        "preObfuscateBackup": "background/caldav-client.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "sync-engine.js",
+        "originalPath": "backup-core/sync-engine.original.js",
+        "outputPath": "background/sync-engine.js",
+        "originalSize": 5340,
+        "obfuscatedSize": 12505,
+        "originalMd5": "aa20349c70a1cd0eb8e06a4676be2d1b",
+        "obfuscatedMd5": "e8ca40a5922ae2babfa980dfd1e980b5",
+        "backupPath": "backup-core/sync-engine.original.js",
+        "preObfuscateBackup": "background/sync-engine.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "xml-utils.js",
+        "originalPath": "backup-core/xml-utils.original.js",
+        "outputPath": "common/xml-utils.js",
+        "originalSize": 3651,
+        "obfuscatedSize": 12785,
+        "originalMd5": "ab835851c00be7e7691549c327567be1",
+        "obfuscatedMd5": "09ad093e22fad5d46d7311ec4c3d8596",
+        "backupPath": "backup-core/xml-utils.original.js",
+        "preObfuscateBackup": "common/xml-utils.js.pre-obfuscate.bak"
+      }
+    ]
+  },
+  {
+    "obfuscatedAt": "2026-06-08T20:15:15.604Z",
+    "version": "1.0.0",
+    "files": [
+      {
+        "file": "caldav-client.js",
+        "originalPath": "backup-core/caldav-client.original.js",
+        "outputPath": "background/caldav-client.js",
+        "originalSize": 5957,
+        "obfuscatedSize": 15953,
+        "originalMd5": "e798bef6dec3ad9315d9e508c1c83730",
+        "obfuscatedMd5": "1595009a0522bade416bb06d263b99c7",
+        "backupPath": "backup-core/caldav-client.original.js",
+        "preObfuscateBackup": "background/caldav-client.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "sync-engine.js",
+        "originalPath": "backup-core/sync-engine.original.js",
+        "outputPath": "background/sync-engine.js",
+        "originalSize": 5340,
+        "obfuscatedSize": 12904,
+        "originalMd5": "aa20349c70a1cd0eb8e06a4676be2d1b",
+        "obfuscatedMd5": "e18d6cdd1295bb484dd2802e4712dc6c",
+        "backupPath": "backup-core/sync-engine.original.js",
+        "preObfuscateBackup": "background/sync-engine.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "xml-utils.js",
+        "originalPath": "backup-core/xml-utils.original.js",
+        "outputPath": "common/xml-utils.js",
+        "originalSize": 3651,
+        "obfuscatedSize": 9507,
+        "originalMd5": "ab835851c00be7e7691549c327567be1",
+        "obfuscatedMd5": "2722fbf4c950b1469c7d5325f31502e4",
+        "backupPath": "backup-core/xml-utils.original.js",
+        "preObfuscateBackup": "common/xml-utils.js.pre-obfuscate.bak"
+      }
+    ]
+  },
+  {
+    "obfuscatedAt": "2026-06-08T20:17:49.896Z",
+    "version": "1.0.0",
+    "files": [
+      {
+        "file": "caldav-client.js",
+        "originalPath": "backup-core/caldav-client.original.js",
+        "outputPath": "background/caldav-client.js",
+        "originalSize": 5957,
+        "obfuscatedSize": 16705,
+        "originalMd5": "e798bef6dec3ad9315d9e508c1c83730",
+        "obfuscatedMd5": "ed69e5c4cb893c992079f1653093a728",
+        "backupPath": "backup-core/caldav-client.original.js",
+        "preObfuscateBackup": "background/caldav-client.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "sync-engine.js",
+        "originalPath": "backup-core/sync-engine.original.js",
+        "outputPath": "background/sync-engine.js",
+        "originalSize": 5340,
+        "obfuscatedSize": 12766,
+        "originalMd5": "aa20349c70a1cd0eb8e06a4676be2d1b",
+        "obfuscatedMd5": "cbf97359c91f07485ffdd09aa65f40a5",
+        "backupPath": "backup-core/sync-engine.original.js",
+        "preObfuscateBackup": "background/sync-engine.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "xml-utils.js",
+        "originalPath": "backup-core/xml-utils.original.js",
+        "outputPath": "common/xml-utils.js",
+        "originalSize": 3651,
+        "obfuscatedSize": 9653,
+        "originalMd5": "ab835851c00be7e7691549c327567be1",
+        "obfuscatedMd5": "22c5242120e9c68741550bc4773c2c82",
+        "backupPath": "backup-core/xml-utils.original.js",
+        "preObfuscateBackup": "common/xml-utils.js.pre-obfuscate.bak"
+      }
+    ]
+  },
+  {
+    "obfuscatedAt": "2026-06-08T20:42:07.077Z",
+    "version": "1.0.0",
+    "files": [
+      {
+        "file": "caldav-client.js",
+        "originalPath": "backup-core/caldav-client.original.js",
+        "outputPath": "background/caldav-client.js",
+        "originalSize": 5957,
+        "obfuscatedSize": 16018,
+        "originalMd5": "e798bef6dec3ad9315d9e508c1c83730",
+        "obfuscatedMd5": "d08fb3f661bbcf20ed80c9f3acc45c0f",
+        "backupPath": "backup-core/caldav-client.original.js",
+        "preObfuscateBackup": "background/caldav-client.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "sync-engine.js",
+        "originalPath": "backup-core/sync-engine.original.js",
+        "outputPath": "background/sync-engine.js",
+        "originalSize": 5340,
+        "obfuscatedSize": 12624,
+        "originalMd5": "aa20349c70a1cd0eb8e06a4676be2d1b",
+        "obfuscatedMd5": "f274901dd42b9ee8a5bc86ce0f13de36",
+        "backupPath": "backup-core/sync-engine.original.js",
+        "preObfuscateBackup": "background/sync-engine.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "xml-utils.js",
+        "originalPath": "backup-core/xml-utils.original.js",
+        "outputPath": "common/xml-utils.js",
+        "originalSize": 3651,
+        "obfuscatedSize": 11500,
+        "originalMd5": "ab835851c00be7e7691549c327567be1",
+        "obfuscatedMd5": "b137c66a14a3a26ef65529ce9ffaae9f",
+        "backupPath": "backup-core/xml-utils.original.js",
+        "preObfuscateBackup": "common/xml-utils.js.pre-obfuscate.bak"
+      }
+    ]
+  },
+  {
+    "obfuscatedAt": "2026-06-08T20:46:58.480Z",
+    "version": "1.0.0",
+    "files": [
+      {
+        "file": "caldav-client.js",
+        "originalPath": "backup-core/caldav-client.original.js",
+        "outputPath": "background/caldav-client.js",
+        "originalSize": 5957,
+        "obfuscatedSize": 16884,
+        "originalMd5": "e798bef6dec3ad9315d9e508c1c83730",
+        "obfuscatedMd5": "8b13fd4d571299a68fa82563444ddc86",
+        "backupPath": "backup-core/caldav-client.original.js",
+        "preObfuscateBackup": "background/caldav-client.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "sync-engine.js",
+        "originalPath": "backup-core/sync-engine.original.js",
+        "outputPath": "background/sync-engine.js",
+        "originalSize": 5340,
+        "obfuscatedSize": 12869,
+        "originalMd5": "aa20349c70a1cd0eb8e06a4676be2d1b",
+        "obfuscatedMd5": "f0c0ad2e47493aa2934eb3ade744700e",
+        "backupPath": "backup-core/sync-engine.original.js",
+        "preObfuscateBackup": "background/sync-engine.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "xml-utils.js",
+        "originalPath": "backup-core/xml-utils.original.js",
+        "outputPath": "common/xml-utils.js",
+        "originalSize": 3651,
+        "obfuscatedSize": 12484,
+        "originalMd5": "ab835851c00be7e7691549c327567be1",
+        "obfuscatedMd5": "10b53a3e76899c7c889ce7070033e2f4",
+        "backupPath": "backup-core/xml-utils.original.js",
+        "preObfuscateBackup": "common/xml-utils.js.pre-obfuscate.bak"
+      }
+    ]
+  },
+  {
+    "obfuscatedAt": "2026-06-08T21:49:38.500Z",
+    "version": "1.0.0",
+    "files": [
+      {
+        "file": "caldav-client.js",
+        "originalPath": "backup-core/caldav-client.original.js",
+        "outputPath": "background/caldav-client.js",
+        "originalSize": 5957,
+        "obfuscatedSize": 16177,
+        "originalMd5": "e798bef6dec3ad9315d9e508c1c83730",
+        "obfuscatedMd5": "bed95427236c19b894a0b00b8b2f78c3",
+        "backupPath": "backup-core/caldav-client.original.js",
+        "preObfuscateBackup": "background/caldav-client.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "sync-engine.js",
+        "originalPath": "backup-core/sync-engine.original.js",
+        "outputPath": "background/sync-engine.js",
+        "originalSize": 5340,
+        "obfuscatedSize": 13242,
+        "originalMd5": "aa20349c70a1cd0eb8e06a4676be2d1b",
+        "obfuscatedMd5": "6a77e8254b10dda23652fb86cc2c6411",
+        "backupPath": "backup-core/sync-engine.original.js",
+        "preObfuscateBackup": "background/sync-engine.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "xml-utils.js",
+        "originalPath": "backup-core/xml-utils.original.js",
+        "outputPath": "common/xml-utils.js",
+        "originalSize": 3651,
+        "obfuscatedSize": 11064,
+        "originalMd5": "ab835851c00be7e7691549c327567be1",
+        "obfuscatedMd5": "11a38257b556b48c6deb3e0370285992",
+        "backupPath": "backup-core/xml-utils.original.js",
+        "preObfuscateBackup": "common/xml-utils.js.pre-obfuscate.bak"
+      }
+    ]
+  },
+  {
+    "obfuscatedAt": "2026-06-08T21:50:27.013Z",
+    "version": "1.0.0",
+    "files": [
+      {
+        "file": "caldav-client.js",
+        "originalPath": "backup-core/caldav-client.original.js",
+        "outputPath": "background/caldav-client.js",
+        "originalSize": 5957,
+        "obfuscatedSize": 15474,
+        "originalMd5": "e798bef6dec3ad9315d9e508c1c83730",
+        "obfuscatedMd5": "dc5d0fb3b18c0d9b999d2c171c980f62",
+        "backupPath": "backup-core/caldav-client.original.js",
+        "preObfuscateBackup": "background/caldav-client.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "sync-engine.js",
+        "originalPath": "backup-core/sync-engine.original.js",
+        "outputPath": "background/sync-engine.js",
+        "originalSize": 5340,
+        "obfuscatedSize": 13274,
+        "originalMd5": "aa20349c70a1cd0eb8e06a4676be2d1b",
+        "obfuscatedMd5": "2212405bc45ff3122c2f9ce2f3caee8c",
+        "backupPath": "backup-core/sync-engine.original.js",
+        "preObfuscateBackup": "background/sync-engine.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "xml-utils.js",
+        "originalPath": "backup-core/xml-utils.original.js",
+        "outputPath": "common/xml-utils.js",
+        "originalSize": 3651,
+        "obfuscatedSize": 12899,
+        "originalMd5": "ab835851c00be7e7691549c327567be1",
+        "obfuscatedMd5": "ef17cd6933835ae9c7aa48897112461d",
+        "backupPath": "backup-core/xml-utils.original.js",
+        "preObfuscateBackup": "common/xml-utils.js.pre-obfuscate.bak"
+      }
+    ]
+  },
+  {
+    "obfuscatedAt": "2026-06-08T23:38:49.891Z",
+    "version": "1.0.0",
+    "files": [
+      {
+        "file": "caldav-client.js",
+        "originalPath": "backup-core/caldav-client.original.js",
+        "outputPath": "background/caldav-client.js",
+        "originalSize": 5957,
+        "obfuscatedSize": 16034,
+        "originalMd5": "e798bef6dec3ad9315d9e508c1c83730",
+        "obfuscatedMd5": "dd769b98b71d3f911ea2ee9fc9c160d8",
+        "backupPath": "backup-core/caldav-client.original.js",
+        "preObfuscateBackup": "background/caldav-client.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "sync-engine.js",
+        "originalPath": "backup-core/sync-engine.original.js",
+        "outputPath": "background/sync-engine.js",
+        "originalSize": 5340,
+        "obfuscatedSize": 12671,
+        "originalMd5": "aa20349c70a1cd0eb8e06a4676be2d1b",
+        "obfuscatedMd5": "d281387696a0a1649abdbb7bac48e0fd",
+        "backupPath": "backup-core/sync-engine.original.js",
+        "preObfuscateBackup": "background/sync-engine.js.pre-obfuscate.bak"
+      },
+      {
+        "file": "xml-utils.js",
+        "originalPath": "backup-core/xml-utils.original.js",
+        "outputPath": "common/xml-utils.js",
+        "originalSize": 3651,
+        "obfuscatedSize": 13721,
+        "originalMd5": "ab835851c00be7e7691549c327567be1",
+        "obfuscatedMd5": "618c82b9177f73f7a84ae74be4987063",
+        "backupPath": "backup-core/xml-utils.original.js",
+        "preObfuscateBackup": "common/xml-utils.js.pre-obfuscate.bak"
+      }
+    ]
+  }
+]

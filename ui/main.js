@@ -37,6 +37,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         // If not configured, go to config page / 如果未配置，跳转到配置页
         await ViewRouter.load('config', 'config-view');
     }
+
+    // 4. Fix chat input placeholder (__MSG_* in index.html is not processed by replaceI18n)
+    const chatInput = document.getElementById('chat-input-field');
+    if (chatInput) {
+        chatInput.placeholder = chrome.i18n.getMessage('chatHint') || '用自然语言描述日程...';
+    }
 });
 
 // Listen for global messages (handle hot navigation)

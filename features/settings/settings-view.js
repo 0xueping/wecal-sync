@@ -3,7 +3,7 @@
  * 职责：管理应用参数配置（AI 服务、提醒偏好等）
  * 
  * 变更说明（v1.5.2）：
- * - 默认使用智谱 AI glm-4-flash（免费模型，无需付费）
+ * - 默认使用智谱 AI glm-4.5-flash（免费模型，无需付费）
  * - 支持任何兼容 OpenAI API 格式的服务商
  * - 添加了帮助悬浮窗引导用户获取 API Key
  */
@@ -34,7 +34,7 @@ export async function init(params, router) {
     if (saved.aiModel) {
         aiModelInput.value = saved.aiModel;
     } else {
-        aiModelInput.value = 'glm-4-flash';
+        aiModelInput.value = 'glm-4.5-flash';
     }
 
     if (saved.aiKey) {
@@ -222,6 +222,83 @@ export async function init(params, router) {
     document.getElementById('cancelSettingsBtn').addEventListener('click', () => {
         router.load('today', 'today-view');
     });
+
+    // 4.5. 测试 AI 连接
+    const testAiBtn = document.getElementById('testAiBtn');
+    const testAiStatus = document.getElementById('testAiStatus');
+    if (testAiBtn) {
+        testAiBtn.addEventListener('click', async () => {
+            testAiBtn.disabled = true;
+            testAiBtn.innerText = chrome.i18n.getMessage('testing') || '测试中...';
+            if (testAiStatus) {
+                testAiStatus.innerText = '';
+                testAiStatus.className = 'text-xs mt-1';
+            }
+
+            const baseUrl = aiBaseUrlInput.value.trim();
+            const model = aiModelInput.value.trim();
+            const key = aiKeyInput.value.startsWith('****') ? fullAiKey : aiKeyInput.value.trim();
+
+            if (!key) {
+                if (testAiStatus) {
+                    testAiStatus.innerText = '⚠️ ' + (chrome.i18n.getMessage('aiNotConfiguredAlert') || '请先输入 API Key');
+                    testAiStatus.style.color = 'var(--error)';
+                }
+                testAiBtn.disabled = false;
+                testAiBtn.innerText = chrome.i18n.getMessage('testConnection') || '测试连接';
+                return;
+            }
+
+            try {
+                const apiUrl = baseUrl.endsWith('/chat/completions')
+                    ? baseUrl
+                    : `${baseUrl.replace(/\/+$/, '')}/chat/completions`;
+
+                const resp = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${key}`
+                    },
+                    body: JSON.stringify({
+                        model: model,
+                        messages: [
+                            { role: 'system', content: 'Say "ok"' },
+                            { role: 'user', content: 'test' }
+                        ],
+                        max_tokens: 10
+                    }),
+                    signal: AbortSignal.timeout ? AbortSignal.timeout(10000) : undefined
+                });
+
+                if (resp.ok) {
+                    if (testAiStatus) {
+                        testAiStatus.innerText = '✅ ' + (chrome.i18n.getMessage('connectionOk') || '连接成功');
+                        testAiStatus.style.color = 'var(--success)';
+                    }
+                } else if (resp.status === 401) {
+                    const errBody = await resp.text().catch(() => '');
+                    if (testAiStatus) {
+                        testAiStatus.innerText = '❌ ' + (chrome.i18n.getMessage('aiKeyInvalid') || 'API Key 无效 (401)') + (errBody ? ': ' + errBody.slice(0, 100) : '');
+                        testAiStatus.style.color = 'var(--error)';
+                    }
+                } else {
+                    if (testAiStatus) {
+                        testAiStatus.innerText = `❌ HTTP ${resp.status}: ${resp.statusText}`;
+                        testAiStatus.style.color = 'var(--error)';
+                    }
+                }
+            } catch (err) {
+                if (testAiStatus) {
+                    testAiStatus.innerText = '❌ ' + (err.name === 'TimeoutError' ? '连接超时' : err.message);
+                    testAiStatus.style.color = 'var(--error)';
+                }
+            } finally {
+                testAiBtn.disabled = false;
+                testAiBtn.innerText = chrome.i18n.getMessage('testConnection') || '测试连接';
+            }
+        });
+    }
 
     // 5. 保存
     saveBtn.addEventListener('click', async () => {

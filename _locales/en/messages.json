@@ -462,7 +462,25 @@
     "message": "Paste API Key"
   },
   "openaiCompatHint": {
-    "message": "Supports any OpenAI-compatible format. Default: glm-4-flash (free)."
+    "message": "Supports any OpenAI-compatible format. Default: glm-4.5-flash (free)."
+  },
+  "glmFreeHint": {
+    "message": "glm-4.5-flash model is completely free."
+  },
+  "testConnection": {
+    "message": "Test Connection"
+  },
+  "testing": {
+    "message": "Testing..."
+  },
+  "connectionOk": {
+    "message": "Connected! API Key is valid"
+  },
+  "connectionFailed": {
+    "message": "Connection failed"
+  },
+  "connectionError": {
+    "message": "Connection error"
   },
   "remindBefore": {
     "message": "Remind Before"

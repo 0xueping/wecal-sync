@@ -27,7 +27,7 @@ export async function checkUpcomingEvents() {
     const todayStart = new Date();
     todayStart.setHours(0, 0, 0, 0);
     const timeStart = todayStart.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
-    const timeEnd = new Date(Date.now() + 259200000).toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+    const timeEnd = new Date(Date.now() + 2678400000).toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
 
     // Build REPORT request body / 构建 REPORT 请求体
     const body = `<?xml version="1.0" encoding="utf-8" ?>
@@ -113,6 +113,7 @@ export async function getScheduleData(forceRefresh = false) {
 
     return { 
         success: true, 
+        all: process(cachedEvents),
         today: process(cachedEvents.filter(e => parseIcalDate(e.dtstart)?.toLocaleDateString() === todayStr)),
         tomorrow: process(cachedEvents.filter(e => parseIcalDate(e.dtstart)?.toLocaleDateString() === tomorrowStr)),
         dayAfterTomorrow: process(cachedEvents.filter(e => parseIcalDate(e.dtstart)?.toLocaleDateString() === dayAfterTomorrowStr))

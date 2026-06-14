@@ -462,7 +462,25 @@
     "message": "粘贴 API Key"
   },
   "openaiCompatHint": {
-    "message": "支持任何 OpenAI 兼容格式。默认 glm-4-flash（免费）。"
+    "message": "支持任何 OpenAI 兼容格式。默认 glm-4.5-flash（免费）。"
+  },
+  "glmFreeHint": {
+    "message": "glm-4.5-flash 模型完全免费。"
+  },
+  "testConnection": {
+    "message": "测试连接"
+  },
+  "testing": {
+    "message": "测试中..."
+  },
+  "connectionOk": {
+    "message": "连接成功！API Key 有效"
+  },
+  "connectionFailed": {
+    "message": "连接失败"
+  },
+  "connectionError": {
+    "message": "连接出错"
   },
   "remindBefore": {
     "message": "提醒提前"
